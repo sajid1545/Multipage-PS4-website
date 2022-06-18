@@ -1,0 +1,135 @@
+/* * Imported google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    background-color: var(--body-color);
+}
+
+:root {
+    --body-color: #E4E9F7;
+    --nav-color: #4070F4;
+    --side-nav: #010718;
+    --text-color: #FFF;
+    --search-bar: #F2F2F2;
+    --search-text: #010718;
+}
+
+.logo{
+    width: 70px;
+    cursor: pointer;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: var(--nav-color);
+}
+.navbar{
+    height: 100%;
+    max-width: 1500px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.navbar .links{
+    display: flex;
+    align-items: center;
+}
+.navbar .links li{
+    list-style: none;
+    margin: 10px;
+}
+.navbar .links li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.column{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-top: 10%;
+    overflow: hidden;
+}
+.col-1{
+    position: relative;
+    margin: 0px 25px;
+    width: 40%;
+}
+.col-1 h2{
+    font-size: 55px;
+    line-height: 65px;
+    margin-bottom: 25px;
+}
+.col-1 h3{
+    font-size: 25px;
+    margin-bottom: 25px;
+    color: rgba(101, 99, 99,0.6);
+}
+.col-1 p{
+    font-size: 15px;
+    color: rgba(90, 89, 89, 0.6);
+    margin-bottom: 25px;
+
+}
+.col-1 h4{
+    margin-bottom: 30px;
+}
+.col-1 .buy-now{
+    height: 40px;
+    width: 140px;
+    background: linear-gradient(to right, rgb(255, 82, 111), rgb(255, 53, 39));
+    outline: none;
+    border: none;
+    border-radius: 7px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+.col-1 .buy-now img{
+    display: none;
+    width: 30px;
+}
+.col-1 .buy-now:hover img{
+    width: 60px;
+    display: block;
+}
+.col-1 .buy-now:hover{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 170px;
+    padding: 15px;
+}
+
+.col-1::before{
+    content: "";
+    height: 60%;
+    width: 10px;
+    position: absolute;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    left: -15px;
+    top: 11px;;
+}
+
+.col-2{
+    width: 60%;
+    position: relative;
+}
+
+.controller{
+    width: 80%;
+}
+.color-box{
+    
+}
