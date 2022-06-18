@@ -70,6 +70,7 @@ nav{
     font-size: 55px;
     line-height: 65px;
     margin-bottom: 25px;
+    
 }
 .col-1 h3{
     font-size: 25px;
@@ -125,11 +126,287 @@ nav{
 .col-2{
     width: 60%;
     position: relative;
+    display: flex;
+    align-items: center;
 }
 
 .controller{
-    width: 80%;
+    width: 85%;
 }
 .color-box{
+    height: 100%;
+    width: 90%;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    position: absolute;
+    left: 230px;
+    top: 0;
+    z-index: -1;
+    border-radius: 25px;
+}
+.btn-add img{
+    width: 50px;
+    cursor: pointer;
+}
+.btn-add p{
+    text-align: center;
+    color: white;
+}
+
+footer{
+    padding: 0;
+    margin-top: 100px;
+    background-color: rgb(36, 38, 43);
+    max-height: 1200px;
+    /* padding: 70px 0px; */
+    width: 100%;
+    /* display: flex;
+    align-items: center; */
+}
+.foot-container{
+    height: 60%;
+    align-items: center;
+    padding: 80px 0;
+    width: 80%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    /* margin-bottom: 20px; */
+}
+.foot-col{
+    width: 25%;
+}
+.foot-col h4{
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    position: relative;
+
+
+}
+.foot-col h4::before{
+    content: "";
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+.foot-col ul li{
+    margin-bottom: 25px;
+}
+.foot-col ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: rgb(187, 187, 187);
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+}    
+.foot-col ul li a:hover{
+    margin-left: 8px;
+    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.foot-col .social-links a{
+    display: inline-block;
+    background-color: rgb(36, 38, 43);
+
+    line-height: 40px;
+    margin-right: 20px;
+    border-radius: 50%;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    color: white;
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
     
+    font-size: 18px;
+    transition: all 0.5s ease;
+    
+}
+.foot-col .social-links a:hover{
+    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+
+.hamburger{
+    cursor: pointer;
+    display: none;
+}
+
+.bar{
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    margin: 5px;
+    display: block;
+    transition: all 0.4s ease;
+}
+
+@media (max-width:700px) {
+    .logo{
+        display: none
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+
+    }
+    .links{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        flex-direction: column;
+        width: 300px;
+        gap: 20px;
+        transform: 0.3s;
+        background-color: var(--side-nav);
+        height: 100vh;
+        z-index: 100;
+    }
+    
+    .links a{
+        margin: 16px 0;
+    }
+    .links.active{
+        left: 0%;
+    }
+
+    .column{
+        flex-direction: column-reverse;
+        margin-left: 0%;
+        margin-top: 15%;
+    }
+    .col-1{
+        margin: 70px 0px;
+        width: 45%;
+    }
+
+    .col-1 h2{
+        font-size: 30px;
+        line-height: 34px;
+        margin-bottom: 10px;
+        
+    }
+
+    .col-1 h3{
+        font-size: 12px;
+    margin-bottom: 12px;
+ }
+    .col-1 p{
+        font-size: 15px;
+        color: rgba(90, 89, 89, 0.6);
+        margin-bottom: 25px;
+    
+    }
+    .col-1 h4{
+        margin-bottom: 25px;
+        font-size: 13px;
+    }
+
+    .col-2{
+        width: 75%;
+    }
+
+    .controller{
+        width: 80%;
+    }
+    .color-box{
+        width: 120%;
+        left: 121px;
+        border-radius: 25px;
+    }
+    .btn-add img{
+        width: 50px;
+    }
+    .btn-add {
+        text-align: center;
+    margin-bottom: -30px;
+    }
+    .foot-col{
+        width: 50%;
+        margin-bottom: 50px;
+    }
+}
+
+
+
+.gallery-container{
+    /* background-color: rgba(90, 89, 89, 0.6) ; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper{
+    width: 80%;
+}
+.swiper img{
+    width: 100%;
+    height:fit-content;
+    margin-top: 50px;    
+    /* margin-bottom: 10px; */
+} 
+
+.swiper .swiper-pagination-bullet-active{
+    background-color: white;
+}
+
+.main-about{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    min-height: 100vh;
+
+}
+.about-section{
+    background: url('Playstation_Img/about.jpg') no-repeat left;
+    background-size: cover;
+    width: 80%;
+    padding: 100px 0;
+}
+.about-inner-section{
+    color: white;
+    width: 50%;
+    float: left;
+    padding: 150px;
+    background-color: #010718;
+    float: right;
+}
+
+
+
+@media (max-width:750px) {
+    .about-section{
+        width: 100%;
+    }
+        
+    .about-inner-section{
+        width: 61%;
+        padding: 75px;
+    }   
+        
+        
 }
