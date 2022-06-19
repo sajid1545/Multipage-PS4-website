@@ -8,4 +8,15 @@ hamburger.addEventListener('click',()=>{
     links.classList.toggle('active')
 })
 
+let darklight = document.querySelector('.darkLight');
+darklight.addEventListener('click',()=>{
+    darklight.classList.toggle('active')
+    body.classList.toggle('dark')
+})
+
+let searchToggle  =  document.querySelector('.searchToggle');
+searchToggle.addEventListener('click',()=>{
+    searchToggle.classList.toggle('active')
+})
+    
 
