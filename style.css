@@ -239,9 +239,8 @@ ul{
 }    
 .foot-col ul li a:hover{
     margin-left: 8px;
-    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-  /* -webkit-background-clip: text; */
-  -webkit-text-fill-color: transparent;
+   color: orangered;
+    
 }
 
 .foot-col .social-links a{
@@ -262,11 +261,10 @@ ul{
     
 }
 .foot-col .social-links a:hover{
-    background: -webkit-linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
-    /* -webkit-background-clip: text; */
-    -webkit-text-fill-color: transparent;
-
+  color: orangered;
+  background: white;
 }
+
 
 
 .hamburger{
@@ -313,7 +311,8 @@ ul{
         transform: 0.3s;
         background-color: var(--side-nav);
         height: 100vh;
-        z-index: 100;
+        z-index: 1;
+        
     }
     
     .links a{
